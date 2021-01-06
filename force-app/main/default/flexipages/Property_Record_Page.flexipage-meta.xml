@@ -7,8 +7,12 @@
                 <value>false</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
-                <name>numVisibleActions</name>
-                <value>3</value>
+                <name>enableActionsConfiguration</name>
+                <value>false</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>hideChatterActions</name>
+                <value>false</value>
             </componentInstanceProperties>
             <componentName>force:highlightsPanel</componentName>
         </componentInstances>
@@ -21,6 +25,14 @@
             <componentInstanceProperties>
                 <name>relatedListComponentOverride</name>
                 <value>NONE</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>rowsToDisplay</name>
+                <value>10</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>showActionBar</name>
+                <value>true</value>
             </componentInstanceProperties>
             <componentName>force:relatedListContainer</componentName>
         </componentInstances>
@@ -128,13 +140,19 @@
     </flexiPageRegions>
     <flexiPageRegions>
         <componentInstances>
-            <componentName>brokerCard</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentName>daysOnMarket</componentName>
-        </componentInstances>
-        <componentInstances>
-            <componentName>propertyMap</componentName>
+            <componentInstanceProperties>
+                <name>latField</name>
+                <value>Location__Latitude__s</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>longField</name>
+                <value>Location__Longitude__s</value>
+            </componentInstanceProperties>
+            <componentInstanceProperties>
+                <name>titleField</name>
+                <value>Name</value>
+            </componentInstanceProperties>
+            <componentName>RecordMap</componentName>
         </componentInstances>
         <componentInstances>
             <componentInstanceProperties>
